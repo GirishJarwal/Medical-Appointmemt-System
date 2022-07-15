@@ -1,8 +1,8 @@
 .Body{
     box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    margin: 10px;
+    padding: 5px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
 
 .slide{
     width: 20%;
-    transform: 2s;
+    transition: 2s;
 }
 .slide img{
     width: 1000px;
@@ -45,7 +45,7 @@
 }
 
 .manual-btn{
-    border: 2px solid chocolate;
+    border: 2px solid rgb(251, 39, 39);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -68,5 +68,23 @@
 }
 
 #radio3:checked ~ .first{
-    margin-left: -0%;
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+nav{
+    font-size: larger;
+    text-decoration: solid;
+    margin: 10px;
+    padding: 5px;
+    background-color: #d2cdd3c3;
+    word-spacing: 20px;
+}
+
+h1{
+    margin: 10px;
+    padding: 5px;
+    
 }
