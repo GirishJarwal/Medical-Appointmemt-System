@@ -86,19 +86,46 @@
 }
 
 
-nav{
+.navbar{
     font-size: larger;
     text-decoration: solid;
-    margin: 10px;
-    padding: 5px;
+    margin: 0;
+    padding: 1px;
     background-color: #d2cdd3c3;
     word-spacing: 20px;
 }
+.nav-list{
+    display: flex;
+}
+.nav-list li{
+    list-style: none;
+}
+.nav-list li a{
+    padding: 26px 30px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+.nav-list li a:hover{
+    color: rgb(32, 108, 230);
+}
 
 .mainHeading{
-    margin: 10px;
-    padding: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-size: 75px;
-    background-color: rgba(140, 51, 204, 0.867);
+    background-color:#d2cdd3c3;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    background: url(R.jpg);
+    background-size: cover;
     
 }
+/* @media only screen and (max-width:1000px){
+    .navigation_auto{
+        flex-direction: row;
+        align-items: center;
+    }
+} */
+
