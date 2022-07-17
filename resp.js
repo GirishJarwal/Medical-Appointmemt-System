@@ -15,13 +15,14 @@ function seterror(id, error){
 
 function validateForm(){
     var returnVal = true;
-    clearErrors();
+    // clearErrors();
 
     //perform validation and if validation fails then set value of returnVal to false
-    var name = document.forms['Healthform']['fName'].value;
-    if(name.length< 4){
-        seterror("fName", "*Length of name is too short");
+    var name = document.forms['HealthForm']["fName"].value;
+     if(name.length < 4){
+        seterror("name", "*Length of name is too short");
         returnVal = false;
+    
     }
 
     var area = document.forms['HealthForm']["fArea"].value;
@@ -30,9 +31,24 @@ function validateForm(){
         returnVal = false;
     }
 
-    var phone = document.forms['Healthform']["fMobile no."].value;
+    var phone = document.forms['HealthForm']["fMobile no."].value;
     if(phone.length != 10){
         seterror("fMobile no.", "*mobile number must constain digits only");
         returnVal = false;
     }
 }
+
+            function openit(){
+                const url = 'form.html';
+                window.open(url);
+            }
+
+            var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000)
+        

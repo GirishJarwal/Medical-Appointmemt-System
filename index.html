@@ -66,24 +66,15 @@
     <hr>
     <!-- image slider end -->
 
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 4){
-                counter = 1;
-            }
-        }, 5000)
-    </script>
-
     <section class="Appointment">
         <h1>Get cared by the best</h1>
         <p>Consult with the experts and get the best possible solution for your problem</p>
         <p>So, Book you Appointment!</p>
-        <button>Book an Appointment</button>
+        
+        <button class="button" onclick="openit()" >
+            Book an Appointment</button>
     </section>
     <hr>
-   
+   <script src="resp.js"></script>
 </body>
 </html>
