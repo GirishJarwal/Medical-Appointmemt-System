@@ -1,91 +1,3 @@
-.Body{
-    box-sizing: content-box;
-    margin: 10px;
-    padding: 5px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #23E3C9;
-    
-    
-}
-.slider{
-    width: 1000px;
-    height: 600px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 600px;
-    display: flex;
-    
-}
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 20%;
-    transition: 2s;
-}
-.slide img{
-    width: 1000px;
-    height: 600px;
-}
-
-.navigation_auto{
-    position: absolute;
-    display: flex;
-    width: 1000px;
-    justify-content: center;
-    margin-top: 560px;
-}
-
-.navigation_auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-}
-
-.navigation_auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation_auto .auto-btn1{
-    background: #40D3DC;
-} 
-
-#radio2:checked ~ .navigation_auto .auto-btn2{
-    background: #40D3DC;
-} 
-
-#radio3:checked ~ .navigation_auto .auto-btn3{
-    background: #40D3DC;
-} 
-
-#radio4:checked ~ .navigation_auto .auto-btn4{
-    background: #40D3DC;
-} 
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -40%;
-}
-#radio4:checked ~ .first{
-    margin-left: -60%;
-}
-
-
 .navbar{
     font-size: larger;
     text-decoration: solid;
@@ -109,18 +21,29 @@
 .nav-list li a:hover{
     color: rgb(32, 108, 230);
 }
-
-.mainHeading{
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 75px;
-    background-color:#d2cdd3c3;
-    font-family: 'Ubuntu', sans-serif;
-    display: flex;
-    background: url(R.jpg);
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
     background-size: cover;
-    
+}
+
+@keyframes animate {
+    0%,100%{
+        background-image: url('gettyimages.jpg');
+    }
+    25%{
+        background-image: url('7mvPH4X.jpg');
+    }
+    50%{
+        background-image: url('pharma.jpg');
+    }
+    75%{
+        background-image: url('R.jpg');
+    }
 }
 /* @media only screen and (max-width:1000px){
     .navigation_auto{
@@ -128,13 +51,15 @@
         align-items: center;
     }
 } */
-
-.Appointment h1{
+.margin{
+    margin-top: 50%;
+}
+ .Appointment h1{
     text-align: center;
     font-size: 40px;
-}
+} 
 
-.Appointment p{
+ .Appointment p{
     text-align: center;
     font-size: x-large;
     text-decoration: bold;
@@ -150,8 +75,17 @@
     font-size: larger;
     background: pink;
     cursor: pointer;
-    border: solid 2px black;
+    border: solid 2px pink;
     border-radius: 20px;
-    
+} 
+
+ .map{
+    text-align: center;
+    font-size: x-large;
 }
+
+Map iframe{
+    width: 80%;
+    border-radius: 20px;
+} 
 

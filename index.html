@@ -6,75 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Appointment System</title>
     <link rel="stylesheet" href="decor.css">
-    <script src="resp.js"></script>
+    <!-- <script src="resp.js"></script> -->
   
 </head>
 <body>
-    <div class="background-img">
-    <h1 class="mainHeading">Medical Appointment System</h1>
-    
-</div>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Appointment</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Map</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Overview</a></li>
-    
-        </ul>
-    </nav>
-
-    <!-- image slider start -->
-    <hr>
-    <div class="Body">
-    <div class="slider">
-        <div class="slides">
-            <!-- radio button start -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!-- radio button end -->
-
-           <!-- slide images start-->
-           <div class="slide first">
-            <img src="R.jpg" alt="This is the first image">
-           </div>
-           <div class="slide second">
-            <img src="pharma.jpg" alt="This is the second image">
-           </div>
-           <div class="slide third">
-            <img src="7mvPH4X.jpg" alt="This is the third image">
-           </div>
-           <div class="slide third">
-            <img src="pharma.jpg" alt="This is the fourth image">
-           </div>
-            <!-- slide images end-->
-            <!-- automatic navigation -->
-           <div class="navigation_auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-           </div>
-            <!-- automatic navigation ends -->
-           
+    <div class="container">
+        <div class="outer">
+            <div class="details">
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Appointment</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Map</a></li>
+                        <li><a href="http://" target="_blank" rel="noopener noreferrer">Overview</a></li>
+                
+                    </ul>
+                </nav>
+            </div>
         </div>
-        
     </div>
-</div>
-    <hr>
-    <!-- image slider end -->
 
-    <section class="Appointment">
+    <hr>
+    <div class="margin">
+   <div class="Appointment">
         <h1>Get cared by the best</h1>
         <p>Consult with the experts and get the best possible solution for your problem</p>
-        <p>So, Book you Appointment!</p>
+        <p>So, Book your Appointment!</p>
         
         <button class="button" onclick="openit()" >
             Book an Appointment</button>
-    </section>
+        </div>
     <hr>
+    <section class="map">
+        <h1 class="map-heading">Know the location of hospitals on Map</h1>
+        <Map>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d15074838.47795905!2d83.499358!3d22.714095000000004!3m2!1i1024!2i768!4f13.1!2m1!1shospitals%20in%20india%20list!5e0!3m2!1sen!2sin!4v1658145200276!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </Map>
+    </section>
+</div>
    <script src="resp.js"></script>
 </body>
 </html>
