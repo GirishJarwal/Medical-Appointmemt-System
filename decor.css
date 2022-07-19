@@ -33,16 +33,16 @@
 
 @keyframes animate {
     0%,100%{
-        background-image: url('gettyimages.jpg');
+        background-image: url('img/gettyimages.jpg');
     }
     25%{
-        background-image: url('7mvPH4X.jpg');
+        background-image: url('img/7mvPH4X.jpg');
     }
     50%{
-        background-image: url('pharma.jpg');
+        background-image: url('img/pharma.jpg');
     }
     75%{
-        background-image: url('R.jpg');
+        background-image: url('img/R.jpg');
     }
 }
 /* @media only screen and (max-width:1000px){
