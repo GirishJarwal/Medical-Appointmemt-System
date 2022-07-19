@@ -84,8 +84,14 @@
     font-size: x-large;
 }
 
-Map iframe{
+Map{
+    margin-left: 40%;
     width: 80%;
     border-radius: 20px;
 } 
+
+Map div a{
+    margin-left: 78%;
+}
+
 
