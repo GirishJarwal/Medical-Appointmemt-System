@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #F94C66;
+    background-color: #F94C67;
     margin: 5%;
 }
 
@@ -38,6 +38,7 @@ h1 {
   background-color: #FAFAFA;
   transition: width 0.4s ease-in-out;
 }
+
 .container .who input:focus{
   background-color: #FFDEDE;
   border: 2px solid ;
@@ -84,6 +85,7 @@ h1 {
   position: fixed;
   width: 0;
 }
+
 .container .gender label {
   display: inline-block;
   padding: 10px 20px;
@@ -124,7 +126,7 @@ h1 {
 .container .button input[type=submit], input[type=reset] {
   text-align: center;
   background-color: #FF1700;
-  border-color: #F94C66;
+  border-color: #F94C67;
   border-radius: 4px;
   padding: 5px 10px;
   margin: 3px;
