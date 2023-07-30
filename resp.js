@@ -16,7 +16,6 @@ function seterror(id, error){
 function validateForm(){
     var returnVal = true;
     // clearErrors();
-
     //perform validation and if validation fails then set value of returnVal to false
     var name = document.forms['HealthForm']["fName"].value;
      if(name.length < 4){
@@ -27,13 +26,13 @@ function validateForm(){
 
     var area = document.forms['HealthForm']["fArea"].value;
     if (area.length<7){
-        seterror("fArea", "*You need to properly define area in which you live");
+        seterror("fArea", "*You need to properly define area of your residence");
         returnVal = false;
     }
 
     var phone = document.forms['HealthForm']["fMobile no."].value;
     if(phone.length != 10){
-        seterror("fMobile no.", "*mobile number must constain digits only");
+        seterror("fMobile no.", "*Mobile number must constain digits only");
         returnVal = false;
     }
 }
